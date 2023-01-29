@@ -1,0 +1,409 @@
+A combined 2-D and 3-D QSAR
+modeling, molecular docking study, design,
+and pharmacokinetic profling of some
+arylimidamide-azole hybrids as superior L.
+donovani inhibitors
+Fabian Audu Ugbe* , Gideon Adamu Shallangwa, Adamu Uzairu and Ibrahim Abdulkadir
+Abstract
+Background: Leishmaniasis is one of the neglected tropical diseases which is prevalent in the tropical regions of the
+world most especially in Africa. It is caused by the Leishmania species and transmitted to humans majorly through
+the bite of the female sandfy. This study was carried out in support of the continuous search for new drug molecules
+efective enough for the treatment of leishmaniasis, and which have very limited side efects. This study was focused
+on a combined 2-D and 3-D QSAR modeling of thirty-six arylimidamide-azole hybrids, molecular docking study,
+design, and pharmacokinetic analysis of some selected and newly designed arylimidamide-azole analogs. The density
+functional theory (DFT) with B3LYP and 6-31G** basis set was employed for the geometry optimization of the various
+compounds. Genetic function approximation (GFA) and multi-linear regression (MLR) approaches were used for the
+2-D QSAR model building, while the fractional factorial design (FFD) and uninformative variable elimination-partial
+least square (UVEPLS) were employed for building the 3-D QSAR model. Pyridoxal kinase (PdxK) receptor (PDB: 6K91)
+was the target protein of interest in this study.
+Results: The built 2-D and 3-D QSAR models were found to satisfy the requirement of both internal and external
+validation tests as follows: 2-D QSAR; R2=0.9614, R2
+adj=0.9513, Q2
+cv=0.9350, R2
+test=0.6766 and cRp2=0.8779, and
+for 3-D QSAR (UVEPLS at PC=5); R2=0.9839, Q2
+LOO=0.7539 and Q2
+LTO=0.7367. The CoMFA steric and electrostatic
+feld contributions were 68.96% and 31.04%, respectively. All the designed analogs showed higher predicted activities than that of the template (36). Also, the new compounds showed higher binding afnities (MolDock scores) than
+that of the reference drug pentamidine (−141.793 kcal/mol), with 36e showing the highest negative MolDock score
+of −208.595 kcal/mol. Additionally, these newly designed compounds were said to be orally bioavailable (excluding
+36f and 36g that violated 2 of the Lipinski’s provisions), with perfect intestinal absorption, less difcult to synthesize,
+AMES toxicity free, and showed strong interactions with the target.
+Conclusions: The newly designed compounds especially 36e have shown a marked pharmacological improvement
+over the template molecule and are therefore recommended for further practical evaluation 
+Background
+Leishmania species is a group of protozoan parasites
+responsible for leishmaniasis, a neglected tropical disease known to afect a global population of up to 350
+million people majorly in the tropical regions (AlTamimia et  al. 2019; Baquedano et  al. 2016). Tree
+common clinical manifestations were earlier reported
+as cutaneous, mucocutaneous, and visceral leishmaniasis (VL) (Díaz et  al. 2019). Among these forms,
+cutaneous is the most common, while VL is the most
+fatal (Keurulainen et  al. 2018). Specifc species causing VL include Leishmania Donovani (L. donovani) and
+L. infantum, transmitted by the insect vector (female
+sandfy) (Ugbe et al. 2022a, b). Only a limited number
+of drugs are readily available for the treatment of leishmaniasis such as pentamidine, amphotericin B, pentostam, paromomycin, and miltefosine, none of which is
+reported free from associated drug adverse efects, low
+efcacies, high cost, etc. (Fan et  al. 2018). For example, amphotericin B has been linked to fever, nephrotoxicity, myocarditis, chill, and hypokalemia (Ghorbani
+and Farhoudi 2018). Induction of insulin-dependent
+diabetes mellitus has been the major drawback of
+pentamidine, while paromomycin is not free from
+nephrotoxicity and ototoxicity (Seifert 2011). Also,
+most organisms had in recent times shown constant
+resistance to some of these medicines, a case which
+has greatly threatened the efective treatment of leishmaniasis (Fan et al. 2018). Additionally, the disease has
+received less attention compared to other infections
+such as hepatitis, malaria, AIDS, diabetes, tuberculosis, and cancer. As such, it has become imperative to
+develop new medicines with attributes that overcome
+all of these shortcomings.
+In the continuous search for new efective drug compounds, in silico approaches like the molecular docking studies, quantitative structure–activity relationship
+(QSAR), homology modeling, molecular dynamics,
+and pharmacokinetics analysis among others play a
+very crucial role because it is cost-efective, save time
+and proves efective than the crude methods (Adeniji
+et al. 2019; Ugbe et al. 2021). Te connection between
+a compound’s structural properties (independent variables) and its biological activities (dependent variable)
+is usually established by QSAR (Adeniji et  al. 2019).
+Molecular docking on the other hand helps to investigate the binding of ligands with the active sites of the
+target receptor (Ibrahim et al. 2020). Te pharmacokinetic study is a crucial step in the preclinical phase
+of new drug molecules, which helps to ascertain how
+such drug compounds afect the living organism when
+administered (Lawal et  al. 2021; Ibrahim et  al. 2021).
+Te choice of drug molecules for oral bioavailability has
+been widely guided by the Lipinski rule of fve (RO5)
+or the Pfzer rule which considers physicochemical
+properties such as molecular weight (MW), lipophilicity, hydrogen bond donors (HBDs), and hydrogen bond
+acceptors (HBAs) as necessary factors in predicting
+drug’s likelihood of being orally bioavailable (Lipinski
+et al. 2001). Also important for evaluation as part of a
+pharmacokinetics study are absorption, distribution,
+metabolism, excretion, and toxicity (ADMET) (Ugbe
+et al. 2022a, b).
+Pyridoxal kinase (PdxK) from L. donovani (PDB:
+6K91) is an interesting enzyme previously reported to
+catalyze the phosphorylation of the 5′ hydroxyl group
+of pyridoxal to form pyridoxal-5′-phosphate, an active
+form of vitamin B6 (Are et al. 2020). PdxK is an important enzyme for parasite growth and key to host infection (Kumar et al. 2018). Chloroquine and primaquine
+which are well-known anti-malaria drugs were earlier
+reported to inhibit PdxK (Kimura et  al. 2018). Terefore, PdxK serves as a promising protein target for
+designing new leishmanial inhibitors. Arylimidamideazole compounds incorporate both arylimidamide and
+azole moiety in their structures, which were reported
+to possess the advantage of interacting with the targets of both classes of compounds and which also show
+improvement in the in  vivo pharmacokinetics and/
+or pharmacodynamics of these classes of molecules
+(Abdelhameed et al. 20
+Hardware and software
+Te hardware used was an HP laptop computer with the
+following specifcations: Processor (Intel(R) Core(TM)
+i5-4210U CPU @ 1.70  GHz 2.40  GHz), Installed
+RAM (8.00  GB), System type (64-bit operating system,×64-based processor), Edition (Windows 10 Home
+Single Language), Version 21H2.
+Software used include ChemDraw Ultra v. 12.0.2,
+Spartan’14 v. 1.1.4, PaDEL-descriptor v. 2.20, and Drug
+Teoretics and Cheminformatics Laboratory (DTC-Lab)-
+based software. Others include Material Studio v. 8.0,
+Open3Dtools, Maestro v. 12.3, Biovia Discovery Studio
+Visualizer v. 16.1.0.15350, and Molegro Virtual Docker v.
+6.0, a product of the A CLC bio company.
+Molecular geometry minimization
+Te molecular structures of all the compounds were
+drawn using the ChemDraw Ultra, saved as MDL molfle format, and thereafter imported separately onto the
+Spartan’14 Graphical User Interface while enabling the
+auto conversion of 2-D models to 3-D. Te imported
+molecules were initially subjected to energy minimization and then saved in Spartan fle format. Te resulting
+structures were then fully optimized frst by using molecular mechanics force feld (MMFF) and thereafter density
+functional theory (DFT) with Becke’s three-parameter
+read-Yang–Parr hybrid (B3LYP) option and utilizing the
+6-31G** basis set. Te optimized structures were then
+saved as SD fles and PDB formats for subsequent use in
+descriptor generation and docking, respectively (Wang
+et al. 2020; Ugbe et al. 2021).
+2‑D QSAR model building
+Te 2-D QSAR model building began with the generation
+of molecular descriptors for all thirty-six compounds by
+feeding the various molecules in SD fle format into the
+PaDEL-Descriptor software (Lawal et al. 2021). Data pretreatment using the DTC-Lab pretreatment tool (GUI
+1.2) was carried out to remove uninformative descriptors
+from the generated descriptors pool (Adeniji et al. 2020).
+With the aid of the DTC-Lab data division tool which
+uses the Kennard Stone method, the resulting data were
+then partitioned into a training set and test set data in the
+70:30 ratio, respectively (Kennard and Stone 1969). Te
+Material studio software was used for the model building
+by employing the genetic function approximation (GFA)
+to obtain the optimum descriptor combination which
+is contained in the QSAR model equations built based
+on the multi-linear regression (MLR) approach. MLR
+establishes the relationship between the dependent variable (pIC50) and the independent variables (molecular
+descriptors) (Arthur et al. 2020). Te MLR equation takes
+the general form (Eq. 2) (Adawara et al. 2020):
+where ‘k’s and ‘x’s are, respectively, regression coefcients
+and independent variables, Y is the dependent variable,
+and ‘C’ represents intercept or regression constant.
+After the model building has been completed, the
+next important step was to subject the built models to
+an internal and external validation assessment. Some
+parameters computed from the Material studio are useful for the internal validation such as correlation coeffcient (R2
+), adjusted correlation coefcient (R2
+adj), and
+cross-validation coefcient (Q2
+cv). Te Y-randomization
+test was also necessary to show how well the model predicts the activities of the training set compounds (Adawara et al. 2020; Ugbe et al. 2021). To ascertain the built
+model’s ability to predict the activities of the external test
+set compounds, a validation assessment was carried out
+externally. Te predictive strength of the QSAR model
+depends heavily on the correlation coefcient (R2
+ test)
+for the external test set (Isyaku et al. 2020). Furthermore,
+the Golbraikh and Tropsha acceptable QSAR model criteria were equally considered (Roy et  al. 2013; Edache
+et  al. 2020a, b; Ugbe et  al. 2022a, b). Table 2 shows the
+selected equations and parameters used for the validation
+assessment.
+Furthermore, the relative contribution of each descriptor in the built QSAR model is shown by the mean efect
+(ME) values, defned as (Eq. 9):
+where βj
+ represents the coefcient j descriptor in the
+model, Dj
+ equals each descriptor’s value for each molecule in the training set, m represents the number of
+descriptors present in the model, and n is the total number of compounds in the training set (Adeniji et al. 2019).
+Te variance infation factor (VIF) defned as (Eq. 10)
+shows the extent of inter-correlation between the
+descriptors.
+R2
+ represents the coefcient of correlation of the multiple regressions between the variables in the model. VIF
+equal to 1 shows that no inter-correlation exists for each
+variable, and for VIF values within the range of 1–5, the
+related model is acceptable, and where VIF is above 10,
+the related model is unstable and therefore cannot be
+accepted (Abdullahi et al. 2019).
+Also, evaluating the applicability domain (AD) of a
+QSAR model helps to ascertain the u
+nternal validation
+Friedman lack of ft (LOF) LOF = SEE
+(1− c+dxp
+M )
+2 (3) Allows for the best ftness score to be
+obtained
+–
+SEE =
+(Yexp−Ypred )
+2
+N−P−1
+Correlation coefcient ( R2
+) R2 = 1 −
+ (Yexp−Ypred )2
+(Yexp−Y¯
+training)2
+ (4) Measures the degree of ftness of the regression equation
+≥0.6
+Adjusted R2
+R2
+adj = R2−p(n−1)
+n−p+1 (5) Ensures the model’s stability and reliability ≥0.5
+Cross-validation regression coefcient ( Q2
+cv) Q2
+cv = 1 −
+ (Ypred−Yexp)2
+(Yexp−Y¯
+training)2
+ (6) Indicates a high internal predictive power ≥0.5
+The coefcient of determination (cR2
+p) of
+Y-Randomization
+cR2
+p = RX[R2 − (Rr)
+2]
+2 (7) This is for confrmation that the QSAR model
+built is strong and not created by chance
+cR2
+p> 0.50
+External validation
+Predicted R2
+ ( R2
+ test) R2
+test = 1 −
+(Ypredtest−Yexptest)2
+(Ypredtest−Y¯
+training)2
+(8) Measures the ability of the model to predict
+activity values of an external set of compounds
+≥0.6
+Golbraikh and Tropsha’s acceptable model
+criteria
+|r
+2
+o − r
+′2
+o | – Assess the robustness and stability of t
+Model development (CoMFA)
+Te aligned structures were used for building the 3-D
+QSAR model using the Open3DQSAR software (Edache
+et al. 2020a, b). 3-D QSAR can be comparative molecular feld analysis (CoMFA) concerned with only steric
+and electrostatic felds’ contributions, or comparative
+molecular similarity indices analysis (CoMSIA) which
+deals with the steric, electrostatic, hydrophobic, hydrogen bond donor, and hydrogen bond acceptor felds’
+contributions, among others (ElMchichi et  al. 2020).
+Herein, the CoMFA model is studied. A dataset of 36
+compounds was divided into a training set and a test
+set of 25 and 11 molecules, respectively, i.e., percentage ratio of 70:30. Te steric and electrostatic molecular interaction felds (MIFs) analysis was carried out on
+the aligned compounds placed within a 3-D cubic lattice
+of grid size 1.5  Å and a 5.0  Å out gap (Tosco and Balle
+2011). Variables pretreatment was carried out as follows:
+energy cutof (30.0 kJ/mol), elimination of variables having constant or near-constant values, and standard deviation cutof (level=2.0) (Al-Attraqchi et  al. 2022). Te
+fractional factorial design (FFDSEL) and uninformative
+variable elimination-partial least square (UVE-PLS) were
+used to develop the statistical models and to generate the
+steric and electrostatic contour plots (Edache et al. 2022).
+Te resulting models were then cross-validated using
+the leave one out (LOO), leave two out (LTO), and leave
+many out (LMO).
+Molecular docking screening
+A molecular docking simulation was conducted between
+the thirty-six arylimidamide-azole analogs, the reference
+drug (pentamidine), and the pyridoxal kinase (PdxK)
+receptor (PDB: 6K91) using Molegro Virtual Docker
+(MVD). PdxK in 3-D form was retrieved from the protein data bank and prepared on the Molegro Virtual
+Docker by removing water molecules, ligands, and cofactors associated with the protein structure. Te software
+allows for the repair (rebuild) of all afected residues. Te
+receptor’s binding cavities were defned and that which
+has the largest volume and surface (volume: 398.336 and
+surface: 952.32) was adopted for the docking. All ligands
+were imported in PDB fle format and prepared appropriately. Te simulation was carried out using the parameter
+settings available in Table  3. Te predicted ligand–protein interaction profles were then visualized using the
+Biovia Discovery Studio Visualizer. A similar method was
+earlier reported elsewhere (Ibrahim et al. 2021; Abdullahi
+et al. 2022).
+Evaluation of pharmacokinetic properties
+Te prediction of pharmacokinetic properties plays a
+very critical role in the early stage of drug discovery.
+Tis is because only molecules which demonstrate good
+ADMET and drug-likeness properties reach the preclinical research phase (Ugbe et  al. 2022a, b). Terefore, six
+arylimidamide-azole hybrids (21, 22, 26, 31, 33, and
+36) with the highest anti-leishmanial activities were
+subjected to drug-likeness and ADMET tests using two
+online web servers; http://www.swissadme.ch/index.php
+and http://biosig.unimelb.edu.au/pkcsm, respectively.
+Similar tests were performed on the newly designed
+compounds (36a–36  g) to ascertain their drug-likeness
+properties. Lipinski’s RO5 also called the Pfzer rule is a
+well-established provision determining the oral bioavailability of a given compound (Lipinski et al. 2001; Lawal
+et  al. 2021). Hence, the various compounds would be
+subjected to the RO5 criterion to ascertain their oral
+bioavailability.
+Table 3 Parameter settings used for the execution of the
+docking process
+Setting Chosen option
+Scoring function
+Score MolDock score
+Grid resolution 0.30Å
+Binding site
+Origin Volume: 398.336; Surface: 971.52
+Center X: 20.73, Y: −2.48, Z: 35.87
+Radius 15
+Search algorithm
+Algorithm MolDock SE
+Number of runs 10
+Constrain poses to cavity Yes
+After docking: Energy minimization Yes
+After docking: Optimize H-bonds Yes
+Parameter setting
+Maximum iteration 1500
+Maximum population size 50
+Pose generation
+Energy threshold 100
+Simplex evolution
+Maximum steps 300
+Neighbor distance factor 1.00
+Multiple poses
+The maximum number of poses
+returned
+5
+Enable energy threshold 0.00
+Cluster similar poses RMSD threshold: 1.00
+Ugbe et al. Bulletin of the National Research Centre (2022) 46:189 Page
+Additionally, a plot showing the correlation between predicted and experimental activities for training and test
+sets was obtained for both models and is presented in
+Fig. 5a, b. Te CoMFA model equation (FFDSEL) is summarized graphically as 3-D contour maps as shown in
+Figs. 6a, b and 7a, b.
+Molecular docking study
+Te results (MolDock scores) of the molecular docking
+simulation conducted between the receptor (PdxK) and
+the 36 arylimidamide-azole hybrids as well as the reference
+drug (pentamidine) using the Molegro Virtual Docker are
+earlier reported in Table 1. Te predicted pharmacological
+interactions of compound 36 (template) and pentamidine,
+with the target receptor, are shown in Fig. 8.
+Pharmacokinetics study
+Te results of the drug-likeness and ADMET properties investigation conducted on the selected
+Fig. 6 Visualization of the CoMFA steric feld contour maps of compound 36 a Red contours represent regions of unfavorable steric bulk; b Blue
+contours represent regions of favorable steric bulk
+Fig. 7 Visualization of the CoMFA electrostatic feld contour maps of compound 36 a Yellow represents regions favored by high electron
+density or unfavorable to electron-withdrawing substituents; b Green represents regions of unfavorable high electron density or favorable to
+electron-withdrawing groups
+Ugbe et al. Bulletin of the National Research Centre (2022) 46:189 Page 13 of 24
+arylimidamide-azole analogues and the newly designed
+compounds are presented in Tables 11 and 12.
+Ligand‑based drug design (LBDD)
+A total of seven compounds were designed using the
+ligand-based drug design approach. A combined 2-D
+and 3-D QSAR approach was adopted, where information provided by the 3-D QSAR (CoMFA) contour
+maps was used for the design, while the inhibitory
+activities of these new compounds were predicted using
+the 2D-QSAR model equation. Teir molecular structures predicted activities and docking scores are presented in Table 13, while Table 14 shows their predicted
+pharmacological interaction profles with PdxK. Also,
+the binding interactions of these compounds (excluding
+36f and 36 g) with the active sites of PdxK as visualized
+via Biovia discovery studio are presented in Figs. 9, 10,
+11. Teir predicted drug-likeness and ADMET properties are earlier reported in Tables 11 and 12.
+Discussion
+2‑D QSAR modeling
+Te values of VIF reported in Table  7 range from 1 to
+5 for all 5 descriptors, indicating that the built QSAR
+model was statistically substantial and is therefore stable and acceptable. Each descriptor has an absolute
+t-statistics value of greater than 2, which shows that the
+selected descriptors were signifcant (Adeniji et al. 2018).
+Additionally, the calculated p values (Table  7) of these
+descriptors in the model at a 95% confdence level were
+less than 0.05. Tis is therefore in support of an alternative hypothesis that states that there is a relationship
+between the descriptors in the model equation and the
+compounds’ inhibitory activities at p ˂ 0.05.
+Te strength and direction of each descriptor’s contributions in the built QSAR model are determined by the
+value of the mean efect (ME) (Table 4). Te magnitude
+of ME signifes the extent to which the descriptor infuences the molecule’s inhibitory activity, while the sign
+of ME shows the direction of infuence. As shown in
+Table 4, SpMin8_Bhv and AATS8p have the largest positive ME, which implies elevating their values will mean a
+corresponding increase in the molecule’s inhibitory activities. ATSC3c, VR1_Dzv, and MDEC-22 on the other
+hand have negative ME values, signifying that an increase
+in these descriptors’ values will lead to a decrease in the
+molecule’s antiproliferative activities.
+Te application of GFA in conjunction with the MLR
+approach led to the development of the 2-D QSAR model
+with a total of fve descriptors as shown in Eq.  13. Te
+built model was adjudged to satisfy the requirement of a
+good QSAR model. Te low residual values between the
+experimental and predicted activity values for both training and test set compounds as shown in Table 6 indicate
+a high predictive strength of the built model. Te R2
+ values of 0.9614 for the training set and 0.6766 for the test
+set from Fig. 1 were similar to those obtained from GFA
+(0.9615 and 0.6766) and MLRplusValidation analysis
+(0.9615 and 0.6766) available in Table  5, which means
+that the R2
+ values were computed accurately. Figure  1
+shows how well the predicted activities correlated with
+the experimental activities as suggested by the grouping
+of points along the line of best fts, implying that the built
+model is very reliable and robust in predicting the activities of new chemical entities. A random distribution of
+standard residuals on both sides of zero as observed in
+Fig. 2 shows that the built model is not associated with
+any systematic error.
+Furthermore, the result of the Pearson correlation
+analysis available in Table 7 shows that no pair of descriptors is signifcantly inter-correlated as suggested by the
+low values of the correlation coefcients. Tis was also
+observed by Adeniji et al. (2018).
+Te values of R2
+ and Q2
+ obtained from the y-randomization test (Table  8) were signifcantly low, and
+this implies that the developed model is stable, robust,
+and reliable. Te Y-randomization coefcient, c R2
+p
+(0.877748) greater than 0.50, signifes that the built
+model is powerful and not inferred by chance. Te pl
